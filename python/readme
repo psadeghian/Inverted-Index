@@ -1,0 +1,2 @@
+The Python script above s an iimplementation of inverted indexing of text files. 
+Note, the input text file needs to be prepared or normalized prior to being fed to the Python script. 
