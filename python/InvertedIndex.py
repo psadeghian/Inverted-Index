@@ -30,6 +30,10 @@ file.close()
 
 file_path = sys.argv[2].strip()
 file = open(file_path, "w")
-for line in index.items():
+word_list = index.keys()
+for word in word_list:
+    line = word + ": "
+    for doc_id in index[word].keys():
+        line = line + doc_id + ":" + str(index[word][doc_id]) + " "
     print(line, file=file)
 file.close()
